@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <div class="calc">
+            <h1 style="text-align: center;">CALCULATOR</h1>
+        <input type="text" id="res">
+        <br><br>
+        <div class = "button">
+            <input type="button" value="C" onclick="res.value=' '"/>
+            <input type="button" value="%" onclick="res.value+='%'"/>
+            <input type="button" value="<-" onclick="res.value=res.value.toString().slice(0,-1)"/>
+            <input type="button" value="/" onclick="res.value+='/'"/>
+            <br>
+            <input type="button" value="7"onclick="res.value+='7'"/>
+            <input type="button" value="8" onclick="res.value+='8'"/>
+            <input type="button" value="9" onclick="res.value+='9'"/>
+            <input type="button" value="+" onclick="res.value+='+'"/>
+            <br>
+            <input type="button" value="4" onclick="res.value+='4'"/>
+            <input type="button" value="5" onclick="res.value+='5'"/>
+            <input type="button" value="6" onclick="res.value+='6'"/>
+            <input type="button" value="-" onclick="res.value+='-'"/>
+            <br>
+            <input type="button" value="1" onclick="res.value+='1'"/>
+            <input type="button" value="2" onclick="res.value+='2'"/>
+            <input type="button" value="3" onclick="res.value+='3'"/>
+            <input type="button" value="*" onclick="res.value+='*'"/>
+            <br>
+            <input type="button" value="00" onclick="res.value+='00'"/>
+            <input type="button" value="0" onclick="res.value+='0'"/>
+            <input type="button" value=" " onclick="res.value =' '"/>
+            <input type="button" value="=" onclick="res.value =eval(res.value)"/>
+
+
+        </div>
+   
+       
+    </div>
+       
+    </body>
+</html>
